@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        
+        <!-- Title -->
+        <title> Audio Player in HTML5,CSS3,JS,Webpack,Babel,SCSS</title>
+
+    </head>
+<body>
+
+
+    <!-- for background Image -->
+    <div class="background">
+        <div class="background__blur"></div>
+        <img class="background__img" src="/images/Poster1.jpg" alt="Poster" />
+    </div> <!-- / BI -->
+
+    <!-- UI Player -->
+    <div class="player">
+        <div class="player__img">
+            <img src="/images/Poster1.jpg" alt="Poster" />
+        </div>
+
+        <!-- player Control -->
+        <div class="player__controls">
+            <p class="player__controls__title">Bombo</p>
+            <div class="player__controls__buttons">
+                <button class="player__controls__buttons__prev"> <i class="material-icons">skip_previous</i> </button>
+                <button class="player__controls__buttons__play"> <i class="material-icons">play_arrow</i> </button>
+                <button class="player__controls__buttons__next"> <i class="material-icons">skip_next</i> </button>
+                
+                <div class="right">
+                    <i id="volUp" class="material-icons">volume_up</i>
+                    <i id="volDm" class="material-icons">volume_down</i>
+                    <i id="mute" class="material-icons">volume_off</i>
+                </div>
+
+                <div class="left">
+                    <i id="loop" class="material-icons">loop</i>
+                    <i id="loopOnce" class="material-icons">repeat_one</i>
+                    <i id="shuffle" class="material-icons">shuffle</i>
+                </div>
+            </div>
+
+            <div class="player__controls__timing">
+                <span id="current-time"></span>/<span id="duration"></span>
+                <div class="player__controls__timing__seek-bar">
+                    <div class="player__controls__timing__seek-bar__done"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- js file -->
+    <script src="/main-bundle.js"></script>
+</body>
+</html>
