@@ -83,9 +83,9 @@ playMe.addEventListener('click', () => {
     //let pauseMe = playMe.children[0].innerHTML === 'pause'; 
 
     if( audio.paused ) // if it's paused, so play it
-        playMe.children[trackMe].innerHTML = "pause", audio.play();
+        playMe.children[0].innerHTML = "pause", audio.play();
     else
-        playMe.children[trackMe].innerHTML = "play_arrow", audio.pause();
+        playMe.children[0].innerHTML = "play_arrow", audio.pause();
 
 });
 
@@ -174,11 +174,12 @@ const changeSong = () => {
     titleOfSong.innerHTML = `${Songs[trackMe]}`
     document.getElementsByTagName('img')[0].src = `/images/${poster[trackMe]}.jpg`;
     document.getElementsByTagName('img')[1].src = `/images/${poster[trackMe]}.jpg`; 
-    console.log(poster[trackMe]);
+    
     // I'm getting very late for going to seelp, I'm writing the code, but I don't know I'm doing
 
     timer();
     audio.play();
+    playMe.children[0].innerHTML = "pause";
 }
 
 
